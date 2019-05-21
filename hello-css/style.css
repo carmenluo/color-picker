@@ -1,0 +1,56 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: "Helvetical","Arial",sans-serif;
+	font-weight: normal;
+}
+body{
+	color:#414141;
+	background-color: #EEEEEE;
+	font-size: 16px;
+}
+h1{
+	color:#FF0000;
+	font-size: 2em;
+}
+h2{
+	font-size: 1.6em;
+}
+ul{
+	/*list-style: circle;*/
+	list-style-image: url("icon/1469069.png");
+}
+a{
+	text-decoration: none;
+}
+p{
+	text-align: left;
+}
+ol{
+	list-style-type: lower-roman;
+}
+.custom-list{
+	list-style: none;
+	padding-left: 0;
+}
+.custom-list li{
+	position:relative;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+.custom-list li:before{
+	content: "";
+	width:20px;
+	height: 20px;
+	position:absolute;
+	background-image: url("icon/1469069.png");
+	background-size: cover;
+	background-position:center;
+	left: 0;
+	top:50%;
+	transform:translateY(_50%);
+}
+.isDisabled{
+	color:black;
+	cursor: not-allowed;
+	opacity:0.5;
+	text-decoration: none;
+}
